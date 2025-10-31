@@ -27,6 +27,12 @@ export const metadata = {
           <div>
             <Link href="/mountain"> Mountain Info</Link>
           </div>
+          <div>
+            <Link href="/hotels">Hotels</Link>
+          </div>
+          <div>
+            <Link href="/contacts">Contact Us</Link>
+          </div>
         </nav>
       </div>
     </header>
