@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Conference Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-blue-700 p-4 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-white text-2xl font-bold">Conference Hub</h1>
+        <ul class="flex space-x-4 items-center">
+          <li><a href="/" class="text-white hover:text-gray-200">Home</a></li>
+          <li>
+            <a href="/about" class="text-white hover:text-gray-200">About</a>
+          </li>
+          <li>
+            <a href="/contact" class="text-white hover:text-gray-200"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="/logout"
+              class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+              >Logout</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto p-8">
+      <h2 class="text-3xl font-bold mb-4">Welcome to Your Dashboard</h2>
+      <p class="text-lg mb-6">
+        Hello! You're now logged in. Here's your personalized conference
+        experience.
+      </p>
+
+      <!-- User Profile Section -->
+      <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+        <h3 class="text-2xl font-semibold mb-4">Your Profile</h3>
+        <p><strong>Name:</strong> [User Name - Dynamic in real app]</p>
+        <p><strong>Email:</strong> [User Email - Dynamic in real app]</p>
+        <p><strong>Status:</strong> Registered Attendee</p>
+      </section>
+
+      <!-- Registered Events -->
+      <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+        <h3 class="text-2xl font-semibold mb-4">Your Registered Events</h3>
+        <ul class="list-disc list-inside">
+          <li>AI Workshop - October 15, 2023</li>
+          <li>Blockchain Keynote - October 16, 2023</li>
+          <li>Networking Mixer - October 17, 2023</li>
+        </ul>
+        <p class="mt-4">
+          No events yet?
+          <a href="/" class="text-blue-600 hover:underline"
+            >Browse and register</a
+          >.
+        </p>
+      </section>
+
+      <!-- Quick Actions -->
+      <section class="text-center">
+        <h3 class="text-2xl font-semibold mb-4">Quick Actions</h3>
+        <div class="flex justify-center space-x-4">
+          <a
+            href="/contact"
+            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
+            >Contact Support</a
+          >
+          <a
+            href="/"
+            class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700"
+            >Explore More</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white py-8 mt-8">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2023 Conference Hub. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
